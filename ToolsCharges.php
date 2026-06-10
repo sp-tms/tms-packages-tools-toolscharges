@@ -47,34 +47,34 @@ class ToolsCharges extends BasePackage
     public function addCharge($data)
     {
         if ($this->add($data)) {
-            $this->addResponse('Unit of measurement added');
+            $this->addResponse('Charge added');
 
             return true;
         }
 
-        $this->addResponse('Error Adding unit of measurement', 1);
+        $this->addResponse('Error Adding charge', 1);
     }
 
     public function updateCharge($data)
     {
         if ($this->update($data)) {
-            $this->addResponse('Unit of measurement updated');
+            $this->addResponse('Charge updated');
 
             return true;
         }
 
-        $this->addResponse('Error Updating unit of measurement', 1);
+        $this->addResponse('Error Updating charge', 1);
     }
 
     public function removeCharge($data)
     {
         if ($this->remove($data['id'])) {
-            $this->addResponse('Unit of measurement removed');
+            $this->addResponse('Charge removed');
 
             return true;
         }
 
-        $this->addResponse('Error removing unit of measurement', 1);
+        $this->addResponse('Error removing charge', 1);
 
         return false;
     }
@@ -83,14 +83,14 @@ class ToolsCharges extends BasePackage
     {
         return
             [
-                '0' =>
-                    [
-                        'id' => '0',
-                        'name'  => 'Product'
-                    ],
                 '1' =>
                     [
                         'id' => '1',
+                        'name'  => 'Product'
+                    ],
+                '2' =>
+                    [
+                        'id' => '2',
                         'name'  => 'Charges'
                     ]
             ];

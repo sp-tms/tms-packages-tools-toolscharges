@@ -29,7 +29,7 @@ class ToolsCharges
                         'notNull'       => true,
                     ]
                 ),
-                new Column(//1 - Product, 2-Charges, etc
+                new Column(//1 - Product, 2 - Charges, etc
                     'type',
                     [
                         'type'          => Column::TYPE_TINYINTEGER,
